@@ -4,7 +4,11 @@ import { adminPaths } from "../../routes/admin.routes";
 import { facultyPaths } from "../../routes/faculty.routes";
 import { studentPaths } from "../../routes/student.routes";
 import { useAppSelector } from "../../redux/hooks";
-import { TUser, useCurrentToken } from "../../redux/features/auth/authSlice";
+import {
+  TUser,
+  selectCurrentUser,
+  useCurrentToken,
+} from "../../redux/features/auth/authSlice";
 import { verifyToken } from "../../utils/verifyToken";
 
 const { Sider } = Layout;
@@ -56,7 +60,7 @@ const Sidebar = () => {
           alignItems: "center",
         }}
       >
-        <h1>University Management</h1>
+        <h1>Uni Management</h1>
       </div>
       <Menu
         theme="dark"
