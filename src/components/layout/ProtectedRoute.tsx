@@ -1,12 +1,9 @@
-import { ReactNode } from 'react';
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import {
-  logout,
-  selectCurrentUser,
-  useCurrentToken,
-} from '../../redux/features/auth/authSlice';
-import { Navigate } from 'react-router-dom';
-import { verifyToken } from '../../utils/verifyToken';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ReactNode } from "react";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { logout, useCurrentToken } from "../../redux/features/auth/authSlice";
+import { Navigate } from "react-router-dom";
+import { verifyToken } from "../../utils/verifyToken";
 
 type TProtectedRoute = {
   children: ReactNode;
